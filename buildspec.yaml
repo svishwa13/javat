@@ -9,13 +9,12 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install
-      - mv ROOT-1.0-SNAPSHOT.war ROOT.war
-           
+                 
   post_build:
     commands:
       - echo Build completed on `date`
      
 artifacts:
   files:
-    - '**/ROOT.war'
+    - '**/**.war'
   discard-paths: yes
