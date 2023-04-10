@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install
-      - mv target/ROOT-1.war ROOT.war
+      - mv ROOT-1.0-SNAPSHOT.war ROOT.war
            
   post_build:
     commands:
