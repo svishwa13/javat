@@ -1,3 +1,3 @@
-aws s3 cp s3://sourceart/Javatest/Javatest-1.war /tmp
-sudo mv /tmp/Javatest-1.war /usr/share/tomcat/webapps/Javatest-1.war.war
+aws s3 cp s3://codepipeline-us-east-1-831652875528/tomcat/ROOT.war /tmp
+sudo mv /tmp/ROOT.war /usr/share/tomcat/webapps/ROOT.war
 sudo service tomcat restart
